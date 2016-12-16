@@ -1,0 +1,21 @@
+== Patched eclipse SWT jars
+
+Eclipse 4.6 contains a https://bugs.eclipse.org/bugs/show_bug.cgi?id=481144[nasty issue] that makes it look crap on OSX.
+This repository contains patched JARs that can be used with a stock download to make it look OK.
+
+=== Installation
+
+- Download Eclipse as usual and unpack it
+- Run it once (accept the "downloaded from internet" warning).
+- Close Eclipse
+- Replace `org.eclipse.swt.cocoa.macosx.x86_64_3.105.2.vXXXXXXXX-XXXX.jar` in `Eclipse.app/Contents/Eclipse/plugins` with the appropriate version from this repo.
+
+=== Versions
+
+|===
+| Eclipse Release | Patched JAR
+
+| `4.6.2.RC3`
+| link:org.eclipse.swt.cocoa.macosx.x86_64_3.105.2.v20161122-0613.jar[`org.eclipse.swt.cocoa.macosx.x86_64_3.105.2.v20161122-0613.jar`]
+
+|===
